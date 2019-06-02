@@ -4,3 +4,6 @@
 [submodule "openssl"]
 	path = openssl
 	url = https://github.com/openssl/openssl.git
+[submodule "libevent"]
+	path = libevent
+	url = https://github.com/libevent/libevent.git
