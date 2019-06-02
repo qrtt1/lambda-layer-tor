@@ -12,6 +12,10 @@ make clean
   --enable-static-libevent --with-libevent-dir=/opt/libevent-build \
   --disable-asciidoc 
 make -j8
+
+rm -rf /opt/output/bin
+mkdir -p /opt/output/bin
+cp src/app/tor /opt/output/bin
 popd
 
 exit 0
