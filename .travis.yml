@@ -1,0 +1,22 @@
+language: minimal
+
+services:
+  - docker
+
+script:
+  - docker ps
+  - pwd
+  - ls -alh
+  - ./build.sh $CONTEXT
+  - ./execute-ci.sh
+
+matrix:
+  include:
+  - name: "layer for amazon linux 1"
+    env:
+      - CONTEXT=context-amazon-linux-1
+      - NODE_ENV=nodejs8.10
+  - name: "layer for amazon linux 2"
+    env:
+      - CONTEXT=context-amazon-linux-2
+      - NODE_ENV=nodejs10.x
