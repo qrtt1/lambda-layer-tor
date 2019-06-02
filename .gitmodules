@@ -1,3 +1,6 @@
 [submodule "tor"]
 	path = tor
 	url = https://git.torproject.org/tor.git
+[submodule "openssl"]
+	path = openssl
+	url = https://github.com/openssl/openssl.git
