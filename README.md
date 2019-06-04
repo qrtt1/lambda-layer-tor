@@ -25,3 +25,10 @@ We can build it with commands for `Amazon Linux` and `Amazon Linux 2`:
 ```sh
 ./build.sh context-amazon-linux-2
 ```
+
+After built, you could find either context-amazon-linux-1.zip or context-amazon-2.zip in the **output/** path.
+It could be registered to aws lambda layer, please see [AWS Lambda Layers](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) documents.
+
+## prebuilt releases
+
+There are prebuilt and packaged zip files in our [releases page](https://github.com/qrtt1/lambda-layer-tor/releases).
